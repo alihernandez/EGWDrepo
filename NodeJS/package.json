@@ -1,0 +1,8 @@
+{
+  "name": "nodeApp",
+  "version": "1.0.0",
+  "description": "Basic node app.",
+  "main": "index.js",
+  "author": "Ali Hernandez",
+  "license": "MIT"
+}
