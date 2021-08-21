@@ -1,8 +1,9 @@
 {
-  "name": "nodeApp",
+  "name": "NodeJS",
   "version": "1.0.0",
-  "description": "Basic node app.",
   "main": "index.js",
-  "author": "Ali Hernandez",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
