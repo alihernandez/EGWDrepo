@@ -1,0 +1,84 @@
+a {
+    margin: 7px;
+}
+
+.container {
+background-color: blueviolet;
+}
+
+h1 {
+text-align: center;
+}
+
+.hover, .rotate, .translatex, .translateY, .threeD, .skew, .scale {
+
+width: 100px;
+line-height: 0;
+padding: 50px 0;
+margin: 50px auto;
+background-color: violet;
+border-radius: 50%;
+cursor: pointer; 
+color: white;
+
+/* properties you want to transition  */
+-moz-transition-property: color, background-color, transform;
+transition-property: color, background-color, transform;
+/* /* How long you want the element to transition from start to finish */
+-moz-transition-duration: 2s;
+transition-duration: 2s;  
+/* how long until the transition begins */
+-moz-transition-delay: 0s;
+transition-delay: 0s; 
+/* how we want our elements to tranistion ease, ease-in ease-out ease-in-out */
+-moz-transition-timing-function: ease;
+transition-timing-function: ease;
+
+
+}
+
+    .hover:hover {
+            color: purple; 
+            background-color: turquoise;
+    }
+
+    /* measured in deg */
+    .rotate:hover {
+            color: purple;
+            background-color: turquoise;
+            transform: rotate(360deg); 
+
+    }
+    /* /* measured in deg  */
+    .skew:hover {
+            color: black;
+            background-color: turquoise;
+            transform: skewX(20deg); 
+    }
+
+            /* measured in px */
+    .translatex:hover {
+            color: black;
+            background-color: turquoise;
+            transform: translateX(30px); 
+    }
+
+    .translateY:hover {
+            color: purple;
+            background-color: turquoise;
+            transform: translateY(30px); 
+    }       
+
+    /* measure with an integar  */
+    .scale:hover {
+            color: purple;
+            background-color: turquoise;
+            transform: scaleX(2); 
+    }
+
+    /* measure with inregars x y z axis and deg */
+    .threeD:hover {
+            color: purple;
+            background-color: turquoise;
+            transform: rotate3d(1, 1, 1, 360deg); 
+    }
