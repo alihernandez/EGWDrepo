@@ -12,8 +12,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //define a GET route.
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome!" })l
+    res.json({ message: "Welcome!" })
 });
+
+//include routes
+require("./routes/customer.routes.js")(app);
 
 //listen on port 3000 for incoming requests.
 app.listen(3000, () => {
