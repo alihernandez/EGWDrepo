@@ -24,7 +24,8 @@ function calculateDeg(num) {
     
     var degree= document.getElementById("deg").value;
     var tempCalc= (5/9) * (degree-32);
-    console.log("Your dog is " + tempCalc + " years old in dog years!!");
+    console.log("It is currently " + tempCalc + " degrees in farenheight!!");
 
 document.getElementById("celDeg").innerHTML= Math.round(tempCalc);
 };
+
