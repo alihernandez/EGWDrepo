@@ -3,13 +3,13 @@ const sqlite3 = require("sqlite3").verbose();
 const express = require("express");
 const http = require("http");
 const path = require("path");
-const bodyParser = require("body-parser");
+const bodyParser=require("body-parser");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 
 //PORTS//
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
 
 //Create Server//
 const server = http.createServer(app);
